@@ -19,5 +19,5 @@ export const fn = (ing3, ing4, ing5) => {
    //Using Math.ceil, the number obtained by formula (with decimals) is rounded to the closest next integer one. What makes the weighted average works
    return Math.ceil(precioTotal)
 }
-//Here is where the parameters are introduced according with three conditions. If not, an error will be throwed.
-console.log(fn(3, 2, 1))
+/*Here is where the PARAMETERS are INTRODUCED according with the previous conditions. If not, an error will be throwed. Minimal cost will show in console because this function is not focused on Front-End at this moment*/
+console.log(fn(0, 0, 0))
