@@ -1,8 +1,8 @@
-# El Reparto de Empanadas
+# Empanadas Challenge
 This is a recreation of a meet between geekshubs academy students, were they have to distribute "Empanadillas" in groups of three to take advantage of a 3X1 discount to save as money as possible. This is solved through a function explained below.
 
 ### TABLE OF CONTENTS :open_file_folder: 
-- [El Reparto de Empanadas](#el-reparto-de-empanadas)
+- [Empanadas Challenge](#empanadas-challenge)
     - [TABLE OF CONTENTS :open\_file\_folder:](#table-of-contents-open_file_folder)
     - [STACK :wrench:](#stack-wrench)
     - [FEATURES :bulb:](#features-bulb)
@@ -19,25 +19,29 @@ This is a recreation of a meet between geekshubs academy students, were they hav
 
 ### FEATURES :bulb:
 
--Introduce any amount of empanadillas to be bought. The function throws the cheapest price for the asked combination
+-Introduce any amount of empanadillas to be bought. The function throws the cheapest price for the asked combination or an error if some requirements aren't corrects.
 
 ### WHERE TO TRY AND VISUALIZE IT :mag: 
 
 Find the repository of this proyect on this link:
 
-https://github.com/MR-ant1/Proyecto-L-gica-javascript.git
+https://github.com/MR-ant1/Proyecto-Logica-JS.git
 
 To run and visualize it online, click the next link down below:
-PONER ENLACE PAGES
-https://mr-ant1.github.io/Television-interactiva/
 
+https://mr-ant1.github.io/Proyecto-Logica-JS/
 ### DATABASE DESING :computer:
+
+After a detailed and analyzed reading of logical problem's instruccions and taking as a help the input-output examples, a formula could be extracted to make the function work.
 
 ![Screenshot](img/functionScreenshot.png)
 (Screenshot showing the implemented fusion)
 
 
+Like is showed in the screenshot, this function use a weighted average formula which calculates the relative value for each type of product. The number of any type of Empanada is multiplied by its cost, (this is what agregates a relative value for each product) and then after adding three values, the total of money is divided by 3 to get a minimal cost considering what each product will cost anyway in any combination according to its standard price. 
 
+This method loses some decimals in the process, so at the end of function, a Math.ceil property is used over the total result, to round the cheapest price decimals to next integer and get an integer result.
+In the middle part of code, is where the three conditions (less than 40 empanadas, total of empanadas divisible by 3 and no negative parameters) analyze if the input parameters in final console log are correct to apply propperly the 3X1 discount
 
 ### AUTHOR :pencil2:
 - Antonio Rodrigo - Full Stack Developer student
@@ -46,7 +50,7 @@ https://mr-ant1.github.io/Television-interactiva/
 
 ### POTENTIAL IMPROVEMENTS :heavy_check_mark: 
 
-After many tries of reformulate the function to implement a bucle which combines al prices between them, the final method used to calculate the cheapest price has been a ponderated media that use each kind of Empanada's relative price (basing on each price) as a way to solve the combinations discounts deppending on each mix.
+After many tries of reformulate the function to implement a bucle which combines al prices between them, the final method used to calculate the cheapest price has been by weighted average that use each kind of Empanada's relative cost (basing on each price) as a way to solve the combinations discounts with no matter which combinations.
 
 ### ACKNOWLEDGMENTS :raised_hands:
 
