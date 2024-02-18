@@ -1,86 +1,58 @@
-# Compra de empanadas
+# El Reparto de Empanadas
+This is a recreation of a meet between geekshubs academy students, were they have to distribute "Empanadillas" in groups of three to take advantage of a 3X1 discount to save as money as possible. This is solved through a function explained below.
 
-## Enunciado del problema
+### TABLE OF CONTENTS :open_file_folder: 
+- [El Reparto de Empanadas](#el-reparto-de-empanadas)
+    - [TABLE OF CONTENTS :open\_file\_folder:](#table-of-contents-open_file_folder)
+    - [STACK :wrench:](#stack-wrench)
+    - [FEATURES :bulb:](#features-bulb)
+    - [WHERE TO TRY AND VISUALIZE IT :mag:](#where-to-try-and-visualize-it-mag)
+    - [DATABASE DESING :computer:](#database-desing-computer)
+    - [AUTHOR :pencil2:](#author-pencil2)
+    - [POTENTIAL IMPROVEMENTS :heavy\_check\_mark:](#potential-improvements-heavy_check_mark)
+    - [ACKNOWLEDGMENTS :raised\_hands:](#acknowledgments-raised_hands)
 
-El profesor Maple se embarca en la tarea de adquirir empanadas para todos los participantes del bootcamp de programación. Dado que hoy es el Día de las Empanadas,  hay una oferta especial en la que te llevas hasta tres empanadas y solo pagas la más cara. Con un presupuesto ajustado para el curso, los profesores debaten para intentar minimizar el gasto total por todas las empanadas.
-
-Entonces, el profesor Maple decide seguir la siguiente estrategia: como la empanada más cara la tendrá que pagar de todas formas, la comprará junto a la segunda y tercera más caras, que ofrecen el mayor ahorro. Con las n-3 empanadas restantes, aplicará el mismo procedimiento hasta que no quede ninguna.
-
-Los profesores reflexionan y llegan a la conclusión de que esta es la mejor estrategia. Pero cuando están a punto de pagar, escuchan la siguiente conversación de una familia de al lado:
-
-"Queremos una empanada de pollo, de 12 euros, una de carne, de 14 euros, y una vegetariana, de 16 euros."
-
-Los profesores piensan inmediatamente: "Cogerán la oferta 3x1, de forma que solo paguen los 16 euros de la empanada vegetariana y se lleven gratis la de carne y la de pollo". A lo cual, la familia continúa:
-
-"Pero pónganosla de la siguiente forma: Dos empanadas mitad pollo y mitad vegetariana, y la de carne aparte. Como todas las empanadas valen 14 euros, cogeremos la oferta 3x1 y nos las llevaremos por 14 euros".
-
-Cuando los profesores salen de su asombro, deciden que lo más sensato es utilizar el hecho de que las empanadas se pueden pedir mitad de un tipo y mitad de otro, pagando por ella la media del costo de las dos empanadas enteras. Así, una empanada mitad pollo y mitad vegetariana valdrá (12 + 16)/2 = 14 euros. Sin embargo, no logran decidir cuál es la mejor forma de repartir las empanadas en mitades primero, y en grupos después, para minimizar el precio.
-
-Ayúdales haciendo una función que lo calcule lo más rápido posible: hay decenas de estudiantes hambrientos que dependen de ti.
-
-Las empanadas que han elegido los profesores tienen 3, 4 o 5 ingredientes. La masa de una empanada vale 6 euros, y cada ingrediente adicional vale 2 euros. Así, las empanadas pueden valer 12, 14 o 16 euros. Se garantiza que el número total de empanadas será múltiplo de 3.
-
-## Entrada
-
-La función debe tener tres parámetros de entrada. Cada conjunto de entrada consta de tres enteros, a b c, que son el número de empanadas de 3, 4 y 5 ingredientes, respectivamente. Se garantiza que el número de empanadas, a + b + c, cumple que a + b + c < 40. Además, el número de empanadas es divisible entre 3.
-
-## Salida
-
-Por cada conjunto de entrada, retornar un único entero: la mínima cantidad de euros que se puede pagar para llevarse todas las empanadas.
-
-## Ejemplos de casos de uso
-
-| Entrada     | Salida      |
-| ----------- | ----------- |
-| 1, 1, 1     | 14          |
-| 3, 3, 0     | 26          |
-| 2, 0, 1     | 14          |
-| 9, 10, 11   | 142         |
+### STACK :wrench:
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /><img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=for-the-badge" alt="js"/>
 
 
-## Instrucciones de uso
 
-1. Clonar el repositorio
-3. Instalar las dependencias:
+### FEATURES :bulb:
 
-    ```bash
-    npm install
-    ```
+-Introduce any amount of empanadillas to be bought. The function throws the cheapest price for the asked combination
 
-4. Completar los argumentos y el cuerpo de la función `fn` en el archivo (`main.js`). No se debe renombrar la función `fn`.
+### WHERE TO TRY AND VISUALIZE IT :mag: 
 
-    ```javascript
-    // main.js
-    export const fn = (/* argumentos de la función */) => {
-    // Cuerpo de la función: Completa la lógica de la función aquí.
-    };
-    ```
+Find the repository of this proyect on this link:
 
-4. Ejecutar los test:
-    ```bash
-    npm run test
-    ```
+https://github.com/MR-ant1/Proyecto-L-gica-javascript.git
 
-## Evaluación
+To run and visualize it online, click the next link down below:
+PONER ENLACE PAGES
+https://mr-ant1.github.io/Television-interactiva/
 
-### Mínimo
-Para el APTO se deben pasar todos los test excepto los de validaciones de errores en la entrada de datos
+### DATABASE DESING :computer:
 
-### Extra
-Pasar los test de validación de errores en la entrada de datos (Throws error)
+![Screenshot](img/functionScreenshot.png)
+(Screenshot showing the implemented fusion)
 
-### Ejemplo de ejecución de los test
 
-```bash
-✓ main.test.js (7)
-   ✓ Function fn - Input Parameter Test Cases (7)
-     ✓ Case: fn(1, 1, 1) - Expected Result: 14
-     ✓ Case: fn(3, 3, 0) - Expected Result: 26
-     ✓ Case: fn(2, 0, 1) - Expected Result: 14
-     ✓ Case: fn(9, 10, 11) - Expected Result: 142
-     ✓ Throw error on negative input value: fn(-1, 3, 1)
-     ✓ Throws error when the total sum of inputs (2+2+1) is not a multiple of 3: fn(2, 2, 1)
-     ✓ Throws error when the total sum of inputs (15+15+20) is not less than 40: fn(15, 15, 20)
-```
 
- 
+
+### AUTHOR :pencil2:
+- Antonio Rodrigo - Full Stack Developer student
+
+- <a href="https://github.com/MR-ant1">GitHub - <a href="https://www.linkedin.com/in/antonio-rodrigo-camacho-306b60205?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbZw124AlRu2kGWtATXloag%3D%3D">Linkedin</a>
+
+### POTENTIAL IMPROVEMENTS :heavy_check_mark: 
+
+After many tries of reformulate the function to implement a bucle which combines al prices between them, the final method used to calculate the cheapest price has been a ponderated media that use each kind of Empanada's relative price (basing on each price) as a way to solve the combinations discounts deppending on each mix.
+
+### ACKNOWLEDGMENTS :raised_hands:
+
+Big shout out to GeeksHubs for giving me the chance to learn about all this amazing world of "developing"
+More and better proyects are coming nearly thanks to them!
+
+[def]: #Acknowledgments-
+
+:arrow_up: [Table-of-contents](#table-of-contents-open_file_folder)
