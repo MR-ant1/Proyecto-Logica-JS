@@ -20,6 +20,7 @@ This is a recreation of a meet between geekshubs academy students, were they hav
 ### FEATURES :bulb:
 
 -Introduce any amount of empanadillas to be bought. The function throws the cheapest price for the asked combination or an error if some requirements aren't corrects.
+-Calculate any others weighted average by only changing a few values on the function
 
 ### WHERE TO TRY AND VISUALIZE IT :mag: 
 
@@ -50,7 +51,7 @@ In the middle part of code, is where the three conditions (less than 40 empanada
 
 ### POTENTIAL IMPROVEMENTS :heavy_check_mark: 
 
-After many tries of reformulate the function to implement a bucle which combines al prices between them, the final method used to calculate the cheapest price has been by weighted average that use each kind of Empanada's relative cost (basing on each price) as a way to solve the combinations discounts with no matter which combinations.
+After many tries of reformulate the function and implementing a bucle which combines al prices between them, the final method used to calculate the cheapest price has been by weighted average that use each kind of Empanada's relative cost (basing on each price) as a way to "avoid" bucle and get the mixed Empanadas discounts with no matter which combinations.
 
 ### ACKNOWLEDGMENTS :raised_hands:
 
