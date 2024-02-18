@@ -33,7 +33,7 @@ To run and visualize it online, click the next link down below:
 https://mr-ant1.github.io/Proyecto-Logica-JS/
 ### DATABASE DESING :computer:
 
-After a detailed and analyzed reading of logical problem's instruccions and taking as a help the input-output examples, a formula could be extracted to make the function work.
+After a detailed and analyzed reading of logical problem's instruccions and taking as a help the input-output examples, a formula could be extracted to make the function work. if every 3 empanadas were reducing into an unique price, which is the price of the most expensive of them divided with the cheapest of selected ones, always will be a correlation between this and the value on itself of each one, so determining a constant "weight" of every type of empanada, no matter what mix or combination is done, it will always throw a sum of this product "weight" divided by 3 of them (considering the influence of different "weights")
 
 ![Screenshot](img/functionScreenshot.png)
 (Screenshot showing the implemented fusion)
@@ -41,7 +41,7 @@ After a detailed and analyzed reading of logical problem's instruccions and taki
 
 Like is showed in the screenshot, this function use a weighted average formula which calculates the relative value for each type of product. The number of any type of Empanada is multiplied by its cost, (this is what agregates a relative value for each product) and then after adding three values, the total of money is divided by 3 to get a minimal cost considering what each product will cost anyway in any combination according to its standard price. 
 
-This method loses some decimals in the process, so at the end of function, a Math.ceil property is used over the total result, to round the cheapest price decimals to next integer and get an integer result.
+This method loses some decimals in the process due to the imposibility of considering recurring decimals in the operation, so at the end of function, a Math.ceil property is used over the total result, to round the cheapest price decimals to next integer and get an integer result.
 In the middle part of code, is where the three conditions (less than 40 empanadas, total of empanadas divisible by 3 and no negative parameters) analyze if the input parameters in final console log are correct to apply propperly the 3X1 discount
 
 ### AUTHOR :pencil2:
@@ -55,8 +55,9 @@ After many tries of reformulate the function and implementing a bucle which comb
 
 ### ACKNOWLEDGMENTS :raised_hands:
 
-Big shout out to GeeksHubs for giving me the chance to learn about all this amazing world of "developing"
+Big shout out to GeeksHubs for giving me the chance to learn about all this amazing world of developing
 More and better proyects are coming nearly thanks to them!
+Sorry for many possible mistakes in English but I'm training my writing skills and trying to learn technicalities from the area! :D
 
 [def]: #Acknowledgments-
 
